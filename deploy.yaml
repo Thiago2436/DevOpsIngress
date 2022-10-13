@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cron-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cron
+  template:
+    metadata:
+      labels:
+        app: cron
+    spec:
+      containers:
+        - name: cron
+          image: 580886253641.dkr.ecr.us-east-2.amazonaws.com/lakea-cron:latest
+          ports:
+            - name: tcp
+              containerPort: 8086
