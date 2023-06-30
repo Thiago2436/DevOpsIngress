@@ -5,7 +5,7 @@
 </head>
 <body>
   <h1>Securing NGINX-ingress</h1>
-  <p>This tutorial will detail how to install and secure ingress to your cluster using NGINX.</p>
+  > DISCLAIMER: This tutorial will detail how to install and secure ingress to your cluster using NGINX.
 
   <h2>Step 1 - Install Helm</h2>
   <p>Skip this section if you have helm installed.</p>
